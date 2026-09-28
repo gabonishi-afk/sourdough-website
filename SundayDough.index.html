@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday Dough | Artisanal Bakeshop</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2b2b2b;
+            background-color: #fdfbf7;
+        }
+        h1, h2, h3, h4, .navbar-brand {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            color: white;
+            padding: 120px 0;
+        }
+        .btn-warm {
+            background-color: #d4a373;
+            border-color: #d4a373;
+            color: white;
+            font-weight: 500;
+        }
+        .btn-warm:hover {
+            background-color: #bc8a5f;
+            border-color: #bc8a5f;
+            color: white;
+        }
+        .card {
+            border: none;
+            transition: transform 0.2s ease-in-out;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .menu-price {
+            color: #bc8a5f;
+            font-weight: 600;
+        }
+        footer {
+            background-color: #2b2b2b;
+            color: #fdfbf7;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold text-dark" href="#">Sunday Dough</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="btn btn-warm px-4" href="#visit">Visit Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Fresh on the Menu </h1>
+            <p class="lead mb-4 mx-auto" style="max-width: 600px;">Handcrafted artisanal breads and pastries made with passion, patience, and the finest ingredients.</p>
+            <a href="#menu" class="btn btn-warm btn-lg px-5 py-3">Explore Menu</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80" alt="Baking process" class="img-fluid rounded shadow-sm w-100 object-fit-cover" style="height: 400px;">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 mb-4">Crafted with Love and Tradition</h2>
+                    <p class="text-muted mb-4">At Sunday Dough, we believe that great baking cannot be rushed. Every loaf of sourdough, flaky croissant, and sweet pastry is kneaded, shaped, and baked to golden perfection to bring warmth straight to your table.</p>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> 100% Natural Organic Ingredients</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> Slow-fermented sourdough loaves</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i> Freshly baked daily in small batches</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Our Menu</h2>
+                <p class="text-muted">Simple, honest goods made fresh daily</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Item 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border rounded-3">
+                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                            <h4 class="h5 mb-0 fw-bold">Artisan Sourdough</h4>
+                            <span class="menu-price fs-5">₱190.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border rounded-3">
+                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                            <h4 class="h5 mb-0 fw-bold">Classic Butter Croissant</h4>
+                            <span class="menu-price fs-5">₱120</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border rounded-3">
+                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                            <h4 class="h5 mb-0 fw-bold">Chocolate Pain au Chocolat</h4>
+                            <span class="menu-price fs-5">₱210</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border rounded-3">
+                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                            <h4 class="h5 mb-0 fw-bold">Cinnamon Morning Bun</h4>
+                            <span class="menu-price fs-5">₱180</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border rounded-3">
+                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                            <h4 class="h5 mb-0 fw-bold">Blueberry Lemon Scone</h4>
+                            <span class="menu-price fs-5">₱180</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 border rounded-3">
+                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                            <h4 class="h5 mb-0 fw-bold">Rustic Country Loaf</h4>
+                            <span class="menu-price fs-5">₱250</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">A Peek Inside Our Oven</h2>
+                <p class="text-muted">Fresh bakes straight from the kitchen</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=600&q=80" alt="Breads" class="img-fluid rounded shadow-sm w-100 object-fit-cover" style="height: 300px;">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Pastries" class="img-fluid rounded shadow-sm w-100 object-fit-cover" style="height: 300px;">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=600&q=80" alt="Croissants" class="img-fluid rounded shadow-sm w-100 object-fit-cover" style="height: 300px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Us Section -->
+    <section id="visit" class="py-5 bg-white">
+        <div class="container py-4 text-center">
+            <h2 class="display-5 fw-bold mb-4">Visit Us</h2>
+            <p class="lead text-muted mb-2">Mendiola, Manila</p>
+            <p class="text-muted mb-4">Open Monday – Saturday: 7:00 AM – 2:00 PM</p>
+            <a href="mailto:hello@sundaydough.com" class="btn btn-outline-dark px-4 py-2">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Sunday Dough. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
